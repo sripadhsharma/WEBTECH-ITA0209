@@ -1,0 +1,19 @@
+<html>
+<head>
+<title> Activity 3 </title>
+</head>
+<body>
+<script>
+var now = new Date();
+var day = now.toLocaleString('default', {weekday: 'long'});
+var month = now.toLocaleString('default', {month: 'long'});
+var date = now.getDate();
+var year = now.getFullYear();
+var hours = now.getHours();
+var minutes = now.getMinutes();
+var seconds = now.getSeconds();
+var datetime = day + " " + month + " " + date + " " + year + " " + hours + ":" + minutes + ":" + seconds;
+console.log(datetime);
+</script>
+</body>
+</html>
