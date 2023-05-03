@@ -1,0 +1,20 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>JS DOM paragraph style</title>
+</head>
+<body>
+<p id="text">JavaScript Exercises-resource</p>
+<div>
+<button id="style" onclick="changeStyle()">Style</button>
+</div>
+<script>
+function changeStyle() {
+  var textElement = document.getElementById("text");
+  textElement.style.fontFamily = "Arial";
+  textElement.style.fontSize = "100px";
+  textElement.style.color = "red";
+}
+</script>
+</body>
+</html>
