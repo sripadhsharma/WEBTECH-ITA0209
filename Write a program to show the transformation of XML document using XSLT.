@@ -1,0 +1,49 @@
+Step 1: Create an XML document which contains information of employee and save with employee.xml.
+<?xml version="1.0"?>
+<class>
+     <Employee Id="101">
+          <firstname>Nirja</firstname>
+          <lastname>Shah</lastname>
+          <salary>85000</salary>
+     </Employee>
+     <Employee Id="102">
+          <firstname>Prashant</firstname>
+          <lastname>Saxena</lastname>
+          <salary>95000</salary>
+     </Employee>
+</class>
+
+In above XML document we have mentioned a employee information.
+
+Step 2: Create XSLT document to fulfill the above requirement  and save with employee.xsl in same folder along with employee.xml file.
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">  
+<xsl:template match="/">
+<html>
+     <body>
+     <h2>Employee</h2>
+          <table>
+          <tr>
+               <th>Id</th>
+               <th>FirstName</th>
+               <th>LastName</th>
+               <th>Salary</th>
+          </tr>
+          <xsl:for-each select="class/Employee">
+          <tr>
+               <td><xsl:value-of select="@Id"/></td>
+               <td><xsl:value-of select="firstname"/></td>
+               <td><xsl:value-of select="lastname"/></td>
+               <td><xsl:value-of select="salary"/></td>
+          </tr>
+          </xsl:for-each>
+          </table>
+     </body>
+</html>
+</xsl:template>
+</xsl:stylesheet>
+
+Step 3: Link the XSLT document to XML document by following xml-stylesheet tag.
+<?xml-stylesheet type="text/xsl" href="employee.xsl"?>
+
+Step 4: Run the employee.xml file in the browser.
