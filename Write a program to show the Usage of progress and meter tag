@@ -1,0 +1,22 @@
+Meter Tag
+<!DOCTYPE html>
+<html>
+   <body>
+      <p>Display a gauge:</p>
+      <meter value="2" min="0" max="10">2 out of 10</meter><br>
+      <meter value="0.6">60%</meter>
+   </body>
+</html>
+
+ 
+
+Progress Tag
+<!DOCTYPE html>
+<html>
+   <body>
+      Downloading:
+      <progress value="22" max="100">
+      </progress>
+   </body>
+</html>
+
