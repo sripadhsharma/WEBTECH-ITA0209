@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            p.class-selector {
+        background: yellow;
+                text-align: center;
+                color: blue;
+                font-size: 200%
+            }
+            #id-selector {
+                background-color: pink;
+            }
+        </style>
+    </head>
+    <body>
+        <p class="class-selector">This is an example of class selector.</p>
+        <p id="id-selector">This is an example of id selector.</p>
+    </body>
+</html>
