@@ -1,0 +1,47 @@
+Step1 : Write a XML document containing information and save with .xml extension.
+We have created people.xml.
+<?xml version="1.0" encoding="UTF-8"?>
+<people>
+     <person>
+          <name>Nirja Shaha</name>
+          <education>MCA</education>
+          <City>Pune</City>
+     </person>
+     <person>
+          <name>Prashant Saxena</name>
+          <education>B.Tech</education>
+          <City>Pune</City>
+     </person>
+</people>
+
+Step2 : Write CSS code and save with .CSS file with XML code.
+people
+{
+     background-color: white;
+     display: block;
+     font-family: arial;
+}
+person
+{
+     background-color: white;
+     display: block;
+}
+name
+{
+     font-weight: bold;
+     display: block;
+}
+education
+{
+     display: block;
+     color: blue;
+}
+City
+{
+     display: block;
+}
+
+Step3 : Link CSS file, in XML document as:
+<?xml-stylesheet type="text/css" href="people.css"?>
+
+Run the people.xml file.
