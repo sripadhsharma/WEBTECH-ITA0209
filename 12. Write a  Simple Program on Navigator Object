@@ -1,0 +1,30 @@
+
+<html>
+     <body>
+     <script type="text/javascript">
+          document.write("<b>Browser: </b>"+navigator.appName+"<br><br>");
+          document.write("<b>Browser Version: </b>"+navigator.appVersion+"<br><br>");
+          document.write("<b>Browser Code: </b>"+navigator.appCodeName+"<br><br>");
+          document.write("<b>Platform: </b>"+navigator.platform+"<br><br>");
+          document.write("<b>Cookie Enabled: </b>"+navigator.cookieEnabled+"<br><br>");
+          document.write("<b>User Agent: </b>"+navigator.userAgent+"<br><br>");
+          document.write("<b>Java Enabled: </b>"+navigator.javaEnabled()+"<br><br>");
+     </script>
+     </body>
+</html>
+
+Output:
+
+Browser: Netscape
+
+Browser Version: 5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/37.0.2062.120 Chrome/37.0.2062.120 Safari/537.36
+
+Browser Code: Mozilla
+
+Platform: Linux x86_64
+
+Cookie Enabled: true
+
+User Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/37.0.2062.120 Chrome/37.0.2062.120 Safari/537.36
+
+Java Enabled: true
