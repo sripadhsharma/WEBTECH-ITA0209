@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+     <head>
+          <title>Hyperlink Example</title>
+     </head>
+     <body link="#000080" alink="#54A250" vlink="#ff0000">
+          <p>Click on the following link</p>  
+          <a href="http://www.tutor.com/" target="_blank">Tutor.com</a>
+     </body>
+</html>
